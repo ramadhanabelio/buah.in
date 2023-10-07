@@ -1,0 +1,25 @@
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .img-responsive {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.hapus-btn {
+  border: none; /* Menghapus tepian tombol */
+  background-color: transparent; /* Menghapus latar belakang tombol */
+}

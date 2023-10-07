@@ -1,0 +1,30 @@
+.outline-button {
+  display: inline-block;
+  border: 1px solid #33860b;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #33860b;
+  transition: background-color 0.3s ease;
+}
+
+.outline-button:hover {
+  background-color: #33860b;
+  color: #fff;
+}
+
+/* CSS untuk animasi blur saat halaman dimuat pertama kali */
+@keyframes blur-in {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* Gunakan CSS di atas untuk elemen <body> */
+body {
+  animation: blur-in 1s ease-out forwards;
+}
